@@ -1,3 +1,2 @@
-FROM kyma/docker-nginx
-COPY . /var/www
-CMD 'nginx'
+FROM php:5.6-apache
+COPY . /var/www/html
