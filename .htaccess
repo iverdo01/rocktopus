@@ -3,3 +3,6 @@ RewriteBase /
 
 RewriteCond %{HTTP_HOST} !^www\.
 RewriteRule .* http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^rocktopusfestival\.be$ [NC]
+RewriteRule ^(.*)$ http://rocktopus.be [R=301,L]
