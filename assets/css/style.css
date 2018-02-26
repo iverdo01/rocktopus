@@ -1,0 +1,59 @@
+/* Write your CSS! */
+html {
+  height: 100%; }
+
+body {
+  font-family: 'Khand', sans-serif;
+  background-color: #053C60;
+  height: 100vh;
+  position: relative; }
+
+section {
+  text-align: center;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+p {
+  color: #F2E962; }
+
+a {
+  display: block;
+  width: 160px;
+  margin: 50px auto;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 10px 20px;
+  background-color: #F2E962;
+  color: #053C60;
+  -webkit-transition: background-color 0.4s ease-out;
+  -moz-transition: background-color 0.4s ease-out;
+  -o-transition: background-color 0.4s ease-out;
+  transition: background-color 0.4s ease-out; }
+
+a:hover {
+  background-color: #B5AC1F;
+  cursor: pointer; }
+
+img {
+  display: block;
+  width: 200px;
+  margin: auto; }
+
+#date {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 0.2em; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles for mobile */ }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles for tablet */ }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* Don't forget your Retina CSS! */
+  body {
+    background-size: 72px 72px; } }
