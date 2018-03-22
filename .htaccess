@@ -1,6 +1,0 @@
-RewriteEngine On
-RewriteBase /
-
-
-RewriteCond %{HTTP_HOST} !^www\.rocktopus\.be
-RewriteRule .* https://www.rocktopus.be%{REQUEST_URI} [L,R=301]
