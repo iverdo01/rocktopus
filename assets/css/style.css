@@ -43,24 +43,10 @@ nav {
     .menu-left ul li a:hover, .menu-right ul li a:hover {
       border-bottom: 3px solid #F2E962; }
 
-.row-1 {
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 480px;
-  max-width: 1440px;
-  margin: auto; }
-
-.row-2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  height: 480px;
-  max-width: 1440px;
-  margin: auto; }
-
-.row-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 480px;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-auto-rows: 480px;
   max-width: 1440px;
   margin: auto; }
 
@@ -126,6 +112,16 @@ nav {
     background-size: cover; }
 
 #band-5:hover .image-overlay {
+  background-color: rgba(5, 60, 96, 0.9); }
+
+#band-6 {
+  position: relative; }
+  #band-6 .background-image {
+    background-image: url(../band-6.jpg);
+    background-position: center;
+    background-size: cover; }
+
+#band-6:hover .image-overlay {
   background-color: rgba(5, 60, 96, 0.9); }
 
 #item-tickets {
@@ -278,6 +274,25 @@ nav {
       z-index: 3000; }
   #item-band-header-5 .background-image {
     background-image: url(../band-5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+#item-band-header-6 {
+  position: relative;
+  background-color: #053C60; }
+  #item-band-header-6 .title {
+    position: static;
+    height: 480px;
+    color: #F2E962;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #item-band-header-6 .title h1 {
+      font-size: 64px;
+      z-index: 3000; }
+  #item-band-header-6 .background-image {
+    background-image: url(../band-6.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
